@@ -1,14 +1,29 @@
+import cakeOptions from '../data/cakeOptions'
+
 function Cake() {
+    const inputArray = Object.keys(cakeOptions)
+    const inputs = inputArray.map((item, index)=>{
+        const options = cakeOptions[item].map((item2, index2) => {
+            return(
+                <option value={item2} key={index2}>{item2}</option>
+            )
+        });
+        return(
+            <div key={index}>
+                <label htmlFor={item}>{item}</label>
+                <select name={item}>
+                    {options}
+                </select>
+            </div>
+        )
+    })
+    
     return (
         <div className='third'>
             <h1>Monte seu Bolo!</h1>
 
             <form>
-                <input type="text" name="massa" value="massa" />
-                <input type="text" name="recheio" value="recheio" />
-                <input type="text" name="cobertura" value="cobertura" />
-                <input type="text" name="camadas" value="camadas" />
-                <input type="text" name="decor" value="decor" />
+                {inputs}
             </form>
 
             <div className='bolo'>
