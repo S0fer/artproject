@@ -1,5 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #2e2e2e;
+}
+
 .App {
   background-color: #fff4cb;
   width: 100%;
   min-height: 100vh;
+}
+
+header{
+  display: flex;
+  padding: 2% 5%;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+}
+
+header *{
+  padding: 1%;
+}
+
+.hsocials{
+  justify-self: flex-end;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hsocials > img{
+  width: 20px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  width: 96%;
 }
