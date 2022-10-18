@@ -1,0 +1,28 @@
+.cake{
+    padding: 2%;
+}
+
+.icing {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 150px solid #fffbd2;
+    border-bottom: 50px solid #fffbd2;
+    border-left: 150px solid transparent;
+    clip-path: ellipse(50% 100% at 50% 99%);
+}
+
+.layer, .filling{
+    width: 280px;
+    border-right: 20px solid #fffbd2;
+}
+
+.layer{
+    background-color: chocolate;
+    height: 50px;
+}
+
+.filling{
+    background-color: maroon;
+    height: 20px;
+}

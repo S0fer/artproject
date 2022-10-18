@@ -30,6 +30,11 @@ const cakeOptions = {
         'Bombom',
         'Raspas de Chocolate',
     ],
+    layers : [
+        1,
+        2,
+        3,
+    ]
 }
 
 export default cakeOptions;

@@ -1,14 +1,15 @@
 import cakeOptions from '../data/cakeOptions'
+import "../styles/Cake.css"
 
 function Cake() {
     const inputArray = Object.keys(cakeOptions)
-    const inputs = inputArray.map((item, index)=>{
+    const inputs = inputArray.map((item, index) => {
         const options = cakeOptions[item].map((item2, index2) => {
-            return(
+            return (
                 <option value={item2} key={index2}>{item2}</option>
             )
         });
-        return(
+        return (
             <div key={index}>
                 <label htmlFor={item}>{item}</label>
                 <select name={item}>
@@ -17,7 +18,7 @@ function Cake() {
             </div>
         )
     })
-    
+
     return (
         <div className='third'>
             <h1>Monte seu Bolo!</h1>
@@ -26,8 +27,11 @@ function Cake() {
                 {inputs}
             </form>
 
-            <div className='bolo'>
-
+            <div className='cake'>
+                <div className='icing'></div>
+                <div className='layer'></div>
+                <div className='filling'></div>
+                <div className='layer'></div>
             </div>
         </div>
     );
